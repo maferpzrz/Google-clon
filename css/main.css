@@ -1,0 +1,248 @@
+body{
+    /*margen predeterminado*/
+    background-color:#1f2022;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ESTILO DE NAVEGACION*/
+header{
+    background-color:#1f2022;
+    width: 100%; /*ancho*/
+    height: 50px; /*alto*/
+}
+
+header nav{
+    
+    /*como se puede mover el elemento*/
+    display: flex;
+    justify-content:flex-end ;
+}
+
+header nav .nav-right-section{
+    
+    list-style: none;
+    width: 250px;
+    display: flex; /*elementos en linea*/
+    justify-content: center; /*centra los elementos*/
+    align-items: center; /*alinea los items en relacion a la caja */
+    /*altura*/
+    height: auto; /*la altura se ajusta automaticamente en base a los elementos de esa lista (li)*/
+}
+
+nav .nav-right-section a{
+    /*color de texto*/
+    color:#bdc1c6;
+    /*linea debajo de los items de hiperviculo, de los textos*/
+    text-decoration: none;
+    /*margen derecho, */
+    margin-right: 25px;
+}
+
+nav .nav-right-section .menu{
+    /*background-image: url(https://cdn-icons-png.flaticon.com/512/20/20563.png);*/
+    display: flex;
+    width: 50%;
+    height: 70%;
+    background-size: contain; /*contiene a la img del icon en una cajita */      
+}
+/*borde a la imagen del menu */
+nav .nav-right-section .menu-images{
+    /*border-radius para redondear la imagen */
+    border-radius: 15%; 
+}
+nav .nav-right-section img{
+    /*margin left-margen a la izquierda SOLAMENTE*/
+    margin-left: 10px;
+    /*border-radius para redondear la imagen */
+    border-radius: 50%;
+    width: 30px;
+
+}
+/**********************************************************/
+/**********************************************************/
+/**********************************************************/
+
+/*MAIN*/
+main{
+    text-align: center;
+    margin-top: 100px;
+}
+/* Sección  del logo*/
+main .main-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+/* Logo Google */
+main .main-logo img{
+    height: 100px;
+}
+/* Sección input */
+main .main-input{
+    /* width- anchura */
+    width: 550px; 
+    /* márgenes y centrado */
+    margin: 0 auto;  
+    /* separar input de botones */
+    margin-bottom: 40px; 
+}
+
+/* Cajita gris redondeada buscador */
+main .main-input-container{
+    /* ancho de línea, estilo y color */
+    border: 1px solid #dfe1e5;  
+    /* Bordes redondeados */
+    border-radius: 30px; 
+    width: 525px;
+    /* Mis componentes sean flexibles y se muevan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+main .main-input-container input{
+    background-color: #1f2022;
+}
+
+main .main-input input{
+    height: 40px;
+    width: 430px;
+    border: none;/* Quitar borde negro */
+    outline: none;    /* Quitar borde azul al hacer click */
+}
+
+main .main-input .search-icon{
+    /* Poner una imagen */
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+
+    /* Centrar la imagen */
+    background-position: center;    
+    /* Tamaño del ícono */
+    width: 15px;
+    height: 15px;
+
+    /* Ícono contenido */
+    background-size: contain;
+    padding-left: 6%;
+    background-repeat: no-repeat;
+}
+
+main .main-input .micro-icon{
+    /*Icono del microfono*/
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    /*Medidas del icono del microno*/
+    width: 17px;
+    height: 17px;
+
+    /* Ícono contenido en el espacio */
+    background-size: contain;
+    background-position: center;
+    padding-left: 1%;
+    background-repeat: no-repeat;
+}
+
+main .main-input .cam-icon{
+    /*icono de la camara*/
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    /*medidas del icono de la camara*/
+    width: 17px;
+    height: 17px;
+
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 6%;
+}
+
+/* tamaño de botones */
+main .main-buttons{
+    width: 550px;
+    /* Vertical / Horizonal  */
+    margin: 0 auto;
+}
+/*Alineacion (posicion) de los botones*/
+main .main-buttons div{
+    /* Alinear elementos en la misma línea */
+    display: inline-block; 
+}
+/*Estilo de los botones*/
+main .main-buttons button{
+    border: 0;
+    height: 40px;
+    /*color de la caja del boton*/
+    background-color:#303134; 
+    font-size: 14px;
+    /*color de la letra contenida en el boton*/
+    color: #bdc1c6; 
+    border-radius: 4px;
+    margin-right: 10px;
+    padding: 0 15px;
+}
+/* Nos permite agregarle diseño al poner cursor sobre elemento */
+main .main-input-container:hover{
+    box-shadow: 0 0 5px #20212447;
+}
+main .main-buttons button:hover{
+    color:#8696c1;
+    /* ancho de línea - estilo de línea - color */
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+
+/*FOOOTER- pie de pagina*/
+footer{
+    /*Color de la seccion footer*/
+    background-color: #171717;   
+}
+/*footer de localidad*/
+footer .footer-one{
+    list-style: none;
+    width: auto;
+    
+}
+/*footer lado izquierdo*/
+footer .footer-left{ 
+    list-style: none;
+    display: flex;
+    height: auto;
+    width: auto;
+}
+/*footer lado derecho*/
+footer .footer-right{ 
+    /*elementos en linea*/
+    display: flex; 
+
+    /*en la lista no aparecen los puntos*/
+    list-style: none;
+
+    /*Justifica los elementos al final de la pagina*/
+    justify-content: end; 
+    width: auto;
+}
+
+/*estilo de los enlaces*/
+footer .footer-right a{
+    /*espacio entre los items*/
+    margin-right: 15px; 
+
+    /*color de la letra*/
+    color:#bdc1c6; 
+}
+footer .footer-left a{
+    /*espacio entre los items*/
+    margin-left: 15px; 
+
+    /*color de la letra*/
+    color: #bdc1c6; 
+}
+footer .footer-one li{
+    /*color (li) del primer footer (Mexico)*/
+    color: #bdc1c6; 
+}
+/*linea de divicion*/
+footer .class-hr{ 
+    width:auto;
+    height: 1%;
+}
